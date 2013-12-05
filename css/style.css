@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #92cfe7 url('../images/shared/bg.jpg') no-repeat;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.preloader, .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99998;
+}
+
+.preloader {
+  background: url('http://canucks.nhl.com/v2/ext/images/heading-bg.png') repeat;
+}
+
+.preloader .preloader-container {
+  width: 50%;
+  margin: 30% auto 0 auto;
+}
+
+.preloader .preloader-container p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.preloader .preloader-container .progress-bar {
+  border: 4px solid white;
+  width: 90%;
+  height: 15px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.preloader .preloader-container .progress-bar span {
+  width: 0%;
+  background-color: white;
+  display: block;
+  height: 100%;
+}
+
+.preloader #imagebank {
+  display: none;
+}
+
+.modal {
+  transform: scale(0.1);
+}
+
+.modal .modal-close {
+  color: black;
+  float: right;
+  padding: 10px;
+  text-decoration: none;
+  background: inherit;
+}
+
+.modal .modal-close:hover {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.modal .modal-container {
+  width: 80%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.modal .modal-container h2 {
+  
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  height: 20%;
+  overflow: hidden;
+}
+
+header .ribbon-wrap {
+  width: 100%;
+}
+
+header .ribbon-wrap img {
+  height: 100%;
+}
+
+.container {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav {
+  position: absolute;
+  top: 20%;
+  opacity: 0.8;
+  display: block;
+  width: 7%;
+  z-index: 99999;
+}
+
+.nav:hover {
+  opacity: 1;
+}
+
+.nav.previous {
+  left: 0;
+}
+
+.nav.next {
+  right: 0;
+}
+
+.nav img {
+  width: 100%;
+  height: 100%;
+}
+
+.stage {
+  height: 100%;
+  text-align: center;
+}
+
+.stage-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+
+.stage-code img {
+  max-width: 100%;
+}
+
+.button {
+  padding: 10px 20px;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  width: 30%;
+  margin: 0 auto 20px auto;
+}
+
+.button.facebook {
+  background: #2f51a0;
+}
+
+.button.twitter {
+  background: #399dc6;
+}
+
+.button.facebook:hover {
+  background: #3962c2;
+}
+
+.button.twitter:hover {
+  background: #48bae9;
+}
+
+.hoverlay {
+  opacity: 0;
+  background: red;
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.hoverlay:hover {
+  opacity: 0.7;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #008450;
+  background: -moz-linear-gradient(top,  #008450 0%, #054029 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#008450), color-stop(100%,#054029));
+  background: -webkit-linear-gradient(top,  #008450 0%,#054029 100%);
+  background: -o-linear-gradient(top,  #008450 0%,#054029 100%);
+  background: -ms-linear-gradient(top,  #008450 0%,#054029 100%);
+  background: linear-gradient(to bottom,  #008450 0%,#054029 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008450', endColorstr='#054029',GradientType=0 );
+  color: white;
+  border: #017044 1px solid;
+  font-size: 27px;
+  width: 40%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    width: 15%;
+  }
+  
+  .button {
+    font-size: 15px;
+  }
+  
+  input[type="text"] {
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+.letter-container {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  color: #003c7c;
+}
+
+.letter {
+  background: url('../images/shared/letter-paper.jpg') no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+
+.letter .inside {
+  padding: 200px 190px 0 190px;
+  overflow: scroll;
+}
+
+.letter h2 {
+  border-bottom: 3px solid #003c7c;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 40px;
+  
+}
+
+.letter p {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 20px;
+}

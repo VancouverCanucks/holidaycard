@@ -1,0 +1,39 @@
+{
+  "slides": [
+    {
+      "photo": "intro.png",
+      "code": ""
+    },
+    {
+      "photo": "0.png",
+      "code": ""
+    },
+    {
+      "photo": "1.png",
+      "link": "",
+      "code": ""
+    },
+    {
+      "photo": "2.png",
+      "code": "",
+      "popup": "<div class=\"letter-container\"><div class=\"letter\"><div class=\"inside\"><h2 class=\"agendab\">Seasons greetings</h2><p class=\"agenda\">From all of us in the Vancouver Canucks family, happy holidays to the best fans in the NHL. Thank you for your passion and support for our team. We couldn’t do what we do without fans like you standing with us.</p><p class=\"agenda\">At the start of the season, we talked about the need for change. We brought on John Tortorella as head coach, and Torts has set off a shift in culture and character that has had immediate and positive impact on our team. We vow to bring this heart, hustle, and accountability to every game.</p><p class=\"agenda\">As the calendar draws to a close, we’re looking forward to some big events in 2014: The Tim Horton’s NHL Heritage Classic&#8482; a special Olympic Tribute; and Henrik Sedin’s 1000th game. We’re also gearing up, of course, for the Stanley Cup Playoffs.</p><p class=\"agenda\">On behalf of everyone at Canucks Sports &amp; Entertainment, we wish you a safe and happy holiday season! See you at Rogers Arena in 2014.</p><p class=\"agenda\">Sincerely,</p><img src=\"images/shared/signature.gif\"><p class=\"agenda\"><strong class=\"agendab\">Michael D. Gillis</strong><br>President &amp; General Manager<br>Vancouver Canucks</p></div></div></div>"
+    },
+    {
+      "photo": "3.png",
+      "link": "",
+      "code": ""
+    },
+    {
+      "photo": "4.png",
+      "code": ""
+    },
+    {
+      "photo": "5.png",
+      "code": ""
+    },
+    {
+      "photo": "share.png",
+      "code": "<div class=\"stage-code\"><img src=\"images/slides/share.png\"><a href=\"#\" class=\"button facebook agencykids\">Share on Facebook</a><a href=\"#\" class=\"button twitter agencykids\">Share on Twitter</a><input class=\"agencykids\" type=\"text\" value=\"http://holidays.canucks.com\"></div>"
+    }
+  ]
+}
