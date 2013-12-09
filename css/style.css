@@ -281,6 +281,13 @@ input[type="text"] {
   border: 20px solid white;
 }
 
+.modal .video {
+  width: 600px;
+  height: 338px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+
 .modal .modal-close {
   position: absolute;
   top: 0;

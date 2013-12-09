@@ -7,7 +7,7 @@
     {
       "photo": "0.png",
       "code": "",
-      "popup": "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/73a66Z0zSpU?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+      "popup": "<div class=\"video\"><iframe width=\"600\" height=\"338\" src=\"http://www.youtube.com/embed/73a66Z0zSpU?rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>"
     },
     {
       "photo": "1.png",
