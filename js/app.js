@@ -46,8 +46,8 @@ $(function() {
               window.app.modal(window.app.slides[number].popup);
             });
           }
-          if (typeof window.app.slides[number].function !== 'undefined') {
-            window.app[window.app.slides[number].function]();
+          if (typeof window.app.slides[number].doSomething !== 'undefined') {
+            window.app[window.app.slides[number].doSomething]();
           }
         });
       }
@@ -94,25 +94,33 @@ $(function() {
     }
     
     app.prototype.preloader = function() {
-      bank = document.getElementById('imagebank');
-      for (slide in this.slides) {
-        img = document.createElement('img');
-        img.src = 'images/slides/' + this.slides[slide].photo;
-        img.setAttribute('onload', 'javascript:app.preloaderProgress();');
-        bank.appendChild(img);
+      if (!this.checkForCrapBrowser()) {
+        bank = document.getElementById('imagebank');
+        for (slide in this.slides) {
+          img = document.createElement('img');
+          img.src = 'images/slides/' + this.slides[slide].photo;
+          img.setAttribute('onload', 'javascript:app.preloaderProgress();');
+          bank.appendChild(img);
+        }
+      } else {
+        this.initCard();
       }
     }
     
     app.prototype.preloaderProgress = function() {
       if (this.preloadCount >= this.slideCount) {
-        $('.preloader').fadeOut();
-        $('.wrapper').fadeIn();
-        this.initSnowflakes();
+        this.initCard();
       } else {
         this.preloadCount++;
         percent = parseInt((this.preloadCount / this.slideCount) * 100);
         $('.preloader .preloader-container .progress-bar span').width(percent + '%');
       }
+    }
+    
+    app.prototype.initCard = function() {
+      $('.preloader').fadeOut();
+      $('.wrapper').fadeIn();
+      this.initSnowflakes();
     }
     
     app.prototype.modal = function(content) {
@@ -166,6 +174,14 @@ $(function() {
     
     app.prototype.share = function(url) {
       var pop = window.open(url, 'Share the Holiday Cheer', 'menubar=0,scrollbars=0,location=0,width=600,height=400');
+    }
+    
+    app.prototype.checkForCrapBrowser = function() {
+      if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
+        ieversion = new Number(RegExp.$1);
+        return (ieversion < 8) ? true : false;
+      }
+      return false;
     }
     
     return app;
