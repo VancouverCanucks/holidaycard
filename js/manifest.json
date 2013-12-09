@@ -36,7 +36,7 @@
     },
     {
       "photo": "share.png",
-      "code": "<div class=\"stage-code\"><img src=\"images/slides/share.png\"><a href=\"#\" class=\"button facebook agencykids\">Share on Facebook</a><a href=\"#\" class=\"button twitter agencykids\">Share on Twitter</a><input class=\"agencykids\" type=\"text\" value=\"http://holidays.canucks.com\"></div>"
+      "code": "<div class=\"stage-code\"><img src=\"images/slides/share.png\"><a href=\"javascript:window.app.share('http://www.facebook.com/sharer.php?u=http://holidays.canucks.com');\" class=\"button facebook agencykids\">Share on Facebook</a><a href=\"javascript:window.app.share('http://twitter.com/share?text=weeeeeeeeeeeeeeeee&url=http://holidays.canucks.com');\" class=\"button twitter agencykids\">Share on Twitter</a><input class=\"agencykids\" type=\"text\" value=\"http://holidays.canucks.com\"></div>"
     }
   ]
 }

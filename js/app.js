@@ -164,6 +164,10 @@ $(function() {
       element.css('filter', 'progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678, sizingMethod=\'auto expand\'');
     }
     
+    app.prototype.share = function(url) {
+      var pop = window.open(url, 'Share the Holiday Cheer', 'menubar=0,scrollbars=0,location=0,width=600,height=400');
+    }
+    
     return app;
     
   })();
