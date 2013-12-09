@@ -29,7 +29,6 @@ $(function() {
     
     app.prototype.slide = function(number) {
       window.location.hash = number;
-      this.modalClose();
       if (this.slides[number].code !== '') {
         $('.stage-container').animate({ opacity: 0 }, 400, function() {
           $('.stage-container').html(window.app.slides[number].code);
@@ -39,7 +38,7 @@ $(function() {
         $('.stage-container').animate({ opacity: 0 }, 400, function() {
           $('.stage-container').off('click', '.slide-image');
           img = document.createElement('img');
-          img.className = 'slide-image';
+          img.className = (typeof window.app.slides[number].popup === 'undefined') ? 'slide-image' : 'slide-image action';
           img.src = 'images/slides/' + window.app.slides[number].photo;
           $('.stage-container').html(img).animate({ opacity: 1 }, 400);
           if (typeof window.app.slides[number].popup !== 'undefined') {
@@ -117,11 +116,13 @@ $(function() {
     }
     
     app.prototype.modal = function(content) {
-      $('.modal').html(content).fadeIn();
+      fullContent = '<a href="javascript:void(0);" class="modal-close">&times;</a>' + content;
+      $('.modal').html(fullContent).fadeIn();
+      $('.modal-close').click(function() { window.app.modalClose(); });
     }
     
     app.prototype.modalClose = function() {
-      $('.modal').fadeOut();
+      $('.modal').fadeOut().delay(500).html('');
     }
     
     app.prototype.photoGallery = function() {

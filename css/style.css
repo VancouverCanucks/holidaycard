@@ -272,3 +272,25 @@ input[type="text"] {
   display: block;
   border: 20px solid white;
 }
+
+.modal .modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  background: none;
+  padding: 0px 10px 5px 10px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  display: block;
+}
+
+.modal .modal-close:hover {
+  background: #ccc;
+}
+
+.action {
+  cursor: pointer;
+}
