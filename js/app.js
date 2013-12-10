@@ -134,8 +134,9 @@ $(function() {
     }
     
     app.prototype.photoGallery = function() {
+      $('.modal').off('click', '.photos li');
       $('.modal').on('click', '.photos li', function() {
-        $(this).animate({ left: '-5000px' });
+        $(this).animate({ left: '-2000px' });
         if (window.app.galleryCount >= $('.photos').children().length - 1) {
           window.app.modalClose();
           window.app.galleryCount = 0;

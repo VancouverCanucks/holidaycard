@@ -207,21 +207,6 @@ input[type="text"] {
   margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
-  .nav {
-    width: 15%;
-  }
-  
-  .button {
-    font-size: 15px;
-  }
-  
-  input[type="text"] {
-    font-size: 14px;
-    width: 80%;
-  }
-}
-
 .letter-container {
   height: 100%;
   width: 50%;
@@ -268,8 +253,6 @@ input[type="text"] {
 
 .modal .gallery .photos li {
   float: left;
-  width: 100%;
-  height: 100%;
   position: absolute;
 }
 
@@ -308,4 +291,19 @@ input[type="text"] {
 
 .action {
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    width: 15%;
+  }
+  
+  .button {
+    font-size: 15px;
+  }
+  
+  input[type="text"] {
+    font-size: 14px;
+    width: 80%;
+  }
 }
