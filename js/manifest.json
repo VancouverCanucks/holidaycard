@@ -2,40 +2,48 @@
   "slides": [
     {
       "photo": "intro.png",
+      "title": "Slide 1: Introduction",
       "code": ""
     },
     {
       "photo": "0.png",
+      "title": "Slide 2: Burrows Video",
       "code": "",
       "popup": "<div class=\"video\"><iframe width=\"600\" height=\"338\" src=\"http://www.youtube.com/embed/73a66Z0zSpU?rel=0\" frameborder=\"0\" allowfullscreen></iframe></div>"
     },
     {
       "photo": "1.png",
+      "title": "Slide 3: Luongo",
       "link": "",
       "code": ""
     },
     {
       "photo": "2.png",
       "code": "",
+      "title": "Slide 4: Fin Letter",
       "popup": "<div class=\"letter-container\"><div class=\"letter\"><div class=\"inside\"><h2 class=\"agendab\">Seasons greetings</h2><p class=\"agenda\">From all of us in the Vancouver Canucks family, happy holidays to the best fans in the NHL. Thank you for your passion and support for our team. We couldn’t do what we do without fans like you standing with us.</p><p class=\"agenda\">At the start of the season, we talked about the need for change. We brought on John Tortorella as head coach, and Torts has set off a shift in culture and character that has had immediate and positive impact on our team. We vow to bring this heart, hustle, and accountability to every game.</p><p class=\"agenda\">As the calendar draws to a close, we’re looking forward to some big events in 2014: The Tim Horton’s NHL Heritage Classic&#8482; a special Olympic Tribute; and Henrik Sedin’s 1000th game. We’re also gearing up, of course, for the Stanley Cup Playoffs.</p><p class=\"agenda\">On behalf of everyone at Canucks Sports &amp; Entertainment, we wish you a safe and happy holiday season! See you at Rogers Arena in 2014.</p><p class=\"agenda\">Sincerely,</p><img src=\"images/shared/signature.gif\"><p class=\"agenda\"><strong class=\"agendab\">Michael D. Gillis</strong><br>President &amp; General Manager<br>Vancouver Canucks</p></div></div></div>"
     },
     {
       "photo": "3.png",
+      "title": "Slide 5: Kesler",
       "link": "",
       "code": ""
     },
     {
       "photo": "4.png",
+      "title": "Slide 6: Sedin Image Gallery",
       "code": "",
       "popup": "<div class=\"gallery\"><ul class=\"photos\"><li style=\"-webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -o-transform: rotate(-5deg); -ms-transform: rotate(-5deg); transform: rotate(-5deg); \"><a href=\"javascript:void(0);\" class=\"p01\"><img src=\"images/photos/gallery01.jpg\"></a></li><li style=\"-webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -o-transform: rotate(-3deg); -ms-transform: rotate(-3deg); transform: rotate(-3deg);\"><a href=\"javascript:void(0);\" class=\"p02\"><img src=\"images/photos/gallery02.jpg\"></a></li><li style=\"-webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -o-transform: rotate(-1deg); -ms-transform: rotate(-1deg); transform: rotate(-1deg);\"><a href=\"javascript:void(0);\" class=\"p03\"><img src=\"images/photos/gallery03.jpg\"></a></li><li style=\"-webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -o-transform: rotate(1deg); -ms-transform: rotate(1deg); transform: rotate(1deg);\"><a href=\"javascript:void(0);\" class=\"p04\"><img src=\"images/photos/gallery04.jpg\"></a></li><li style=\"-webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg);\"><a href=\"javascript:void(0);\" class=\"p05\"><img src=\"images/photos/gallery05.jpg\"></a></li><li style=\"-webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); -o-transform: rotate(5deg); -ms-transform: rotate(5deg); transform: rotate(5deg);\"><a href=\"javascript:void(0);\" class=\"p06\"><img src=\"images/photos/gallery06.jpg\"></a></li><li style=\"-webkit-transform: rotate(7deg); -moz-transform: rotate(7deg); -o-transform: rotate(7deg); -ms-transform: rotate(7deg); transform: rotate(7deg);\" class=\"p07\"><a href=\"javascript:void(0);\"><img src=\"images/photos/gallery07.jpg\"></a></li></ul></div>",
       "doSomething": "photoGallery"
     },
     {
       "photo": "5.png",
+      "title": "Slide 7: Bieksa",
       "code": ""
     },
     {
       "photo": "share.png",
+      "title": "Slide 7: Share Screen",
       "code": "<div class=\"stage-code\"><img src=\"images/slides/share.png\"><a href=\"javascript:window.app.share('http://www.facebook.com/sharer.php?u=http://holidays.canucks.com');\" class=\"button facebook agencykids\">Share on Facebook</a><a href=\"javascript:window.app.share('http://twitter.com/share?text=weeeeeeeeeeeeeeeee&url=http://holidays.canucks.com');\" class=\"button twitter agencykids\">Share on Twitter</a><input class=\"agencykids\" type=\"text\" value=\"http://holidays.canucks.com\"></div>"
     }
   ]
