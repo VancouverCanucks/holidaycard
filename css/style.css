@@ -21,6 +21,10 @@ a img {
   border: 0;
 }
 
+.clear {
+  clear: both;
+}
+
 .preloader, .modal {
   position: absolute;
   top: 0;
@@ -270,10 +274,7 @@ input[type="text"] {
 }
 
 .modal .video {
-  width: 600px;
-  height: 338px;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
+  padding-top: 80px;
 }
 
 .modal .modal-close {
@@ -427,5 +428,13 @@ input[type="text"] {
   
   .letter img {
     width: 50%;
+  }
+  
+  .modal-letter {
+    height: auto;
+  }
+  
+  .modal-gal {
+    overflow: hidden;
   }
 }

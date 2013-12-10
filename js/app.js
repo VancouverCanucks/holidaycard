@@ -43,11 +43,12 @@ $(function() {
           $('.stage-container').html(img).animate({ opacity: 1 }, 400);
           if (typeof window.app.slides[number].popup !== 'undefined') {
             $('.stage-container').on('click', '.slide-image', function() {
-              window.app.modal(window.app.slides[number].popup);
+              window.app.modal(window.app.slides[number].popup, window.app.slides[number].modifier);
+              
+              if (typeof window.app.slides[number].doSomething !== 'undefined') {
+                window.app[window.app.slides[number].doSomething]();
+              }
             });
-          }
-          if (typeof window.app.slides[number].doSomething !== 'undefined') {
-            window.app[window.app.slides[number].doSomething]();
           }
         });
       }
@@ -123,9 +124,9 @@ $(function() {
       this.initSnowflakes();
     }
     
-    app.prototype.modal = function(content) {
-      fullContent = '<a href="javascript:void(0);" class="modal-close">&times;</a>' + content;
-      $('.modal').html(fullContent).fadeIn();
+    app.prototype.modal = function(content, modifier) {
+      fullContent = '<a href="javascript:void(0);" class="modal-close">&times;</a>' + content + '<div class="clear"></div>';
+      $('.modal').attr('class', 'modal').addClass(modifier).html(fullContent).fadeIn();
       $('.modal-close').click(function() { window.app.modalClose(); });
     }
     
@@ -183,6 +184,12 @@ $(function() {
         return (ieversion < 8) ? true : false;
       }
       return false;
+    }
+    
+    app.prototype.vidEmbed = function() {
+      ratio = 0.563;
+      width = $(window).width();
+      $('.modal iframe').width(width).height(width * ratio);
     }
     
     return app;
