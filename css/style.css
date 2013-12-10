@@ -209,7 +209,7 @@ input[type="text"] {
 
 .letter-container {
   height: 100%;
-  width: 50%;
+  max-width: 1000px;
   margin: 0 auto;
   color: #003c7c;
 }
@@ -225,6 +225,7 @@ input[type="text"] {
   background: url('../images/shared/letter-border.gif') no-repeat;
   background-size: cover;
   height: 100%;
+  margin: 0 auto;
 }
 
 .letter h2 {
@@ -248,7 +249,7 @@ input[type="text"] {
 }
 
 .modal .gallery .photos {
-  width: 100%;
+  width: 705px;
   height: 90%;
   list-style-type: none;
 }
@@ -256,6 +257,10 @@ input[type="text"] {
 .modal .gallery .photos li {
   float: left;
   position: absolute;
+}
+
+.modal .gallery .photos li a {
+  display: block;
 }
 
 .modal .gallery .photos li img {
@@ -295,23 +300,7 @@ input[type="text"] {
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .modal {
-    height: auto;
-  }
-  
-  .nav {
-    width: 15%;
-  }
-  
-  .button {
-    font-size: 15px;
-  }
-  
-  input[type="text"] {
-    font-size: 14px;
-    width: 80%;
-  }
+@media (max-width: 1190px) {
   
   .letter-container {
     width: 80%;
@@ -327,8 +316,111 @@ input[type="text"] {
   }
   
   .letter h2 {
-    font-size: 20px;
     margin-top: 50px;
+  }
+}
+
+@media (min-width: 850px) {
+  .photos .p01 {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  .photos .p02 {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+
+  .photos .p03 {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+
+  .photos .p04 {
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+
+  .photos .p05 {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  .photos .p06 {
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
+  .photos .p07 {
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+}
+
+@media (max-width: 850px) {
+  
+  .modal .gallery {
+    width: 80%;
+    height: 80%;
+    margin: 80px auto 0 auto;
+  }
+
+  .modal .gallery .photos {
+    list-style-type: none;
+  }
+
+  .modal .gallery .photos li {
+    float: left;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .modal .gallery .photos li img {
+    height: auto;
+    width: 100%;
+    border: white 3px solid;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  
+  .nav {
+    width: 15%;
+  }
+  
+  .button {
+    font-size: 15px;
+  }
+  
+  input[type="text"] {
+    font-size: 14px;
+    width: 80%;
+  }
+  
+  .letter h2 {
+    font-size: 20px;
   }
   
   .letter p {
