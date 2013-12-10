@@ -215,14 +215,16 @@ input[type="text"] {
 }
 
 .letter {
-  background: url('../images/shared/letter-paper.jpg') no-repeat;
+  background: url('../images/shared/letter-bg.jpg') no-repeat;
   height: 100%;
   background-size: cover;
 }
 
 .letter .inside {
   padding: 200px 190px 0 190px;
-  overflow: scroll;
+  background: url('../images/shared/letter-border.gif') no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .letter h2 {
@@ -294,6 +296,10 @@ input[type="text"] {
 }
 
 @media (max-width: 480px) {
+  .modal {
+    height: auto;
+  }
+  
   .nav {
     width: 15%;
   }
@@ -305,5 +311,31 @@ input[type="text"] {
   input[type="text"] {
     font-size: 14px;
     width: 80%;
+  }
+  
+  .letter-container {
+    width: 80%;
+  }
+  
+  .letter {
+    background: none;
+  }
+  
+  .letter .inside {
+    padding: 0;
+    background: none;
+  }
+  
+  .letter h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  
+  .letter p {
+    font-size: 14px;
+  }
+  
+  .letter img {
+    width: 50%;
   }
 }
