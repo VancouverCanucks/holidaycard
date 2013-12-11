@@ -194,7 +194,15 @@ $(function() {
     app.prototype.vidEmbed = function() {
       ratio = 0.563;
       width = $(window).width();
-      $('.modal iframe').width(width).height(width * ratio);
+      if ((width * ratio) >= $(window).height()) {
+        frameH = $(window).height() * 0.8;
+        frameW = frameH / ratio;
+      } else {
+        frameW = width;
+        frameH = width * ratio;
+      }
+      $('.modal .video').width(frameW).height(frameH);
+      $('.modal iframe').width(frameW).height(frameH);
     }
     
     return app;

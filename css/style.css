@@ -276,6 +276,7 @@ input[type="text"] {
 
 .modal .video {
   padding-top: 80px;
+  margin: 0 auto;
 }
 
 .modal .modal-close {
