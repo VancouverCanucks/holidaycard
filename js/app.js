@@ -52,7 +52,7 @@ $(function() {
             });
           }
           
-          if (typeof window.app.slides[number].bubble !== 'undefined') {
+          if (typeof window.app.slides[number].bubble !== 'undefined' && !window.app.checkForCrapBrowser()) {
             $('.stage-container').append('<div class="wordbubble"><div class="words">' + window.app.slides[number].bubble + '</div><div class="bubble1"></div><div class="bubble2"></div></div>');
           }
         });
