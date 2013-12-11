@@ -194,7 +194,7 @@ $(function() {
     app.prototype.vidEmbed = function() {
       ratio = 0.563;
       width = $(window).width();
-      if ((width * ratio) >= $(window).height()) {
+      if ((width * ratio + 80) >= $(window).height()) {
         frameH = $(window).height() * 0.8;
         frameW = frameH / ratio;
       } else {
