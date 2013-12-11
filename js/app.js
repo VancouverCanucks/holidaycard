@@ -39,7 +39,7 @@ $(function() {
           $('.stage-container').off('click', '.slide-image');
           img = document.createElement('img');
           img.className = (typeof window.app.slides[number].popup === 'undefined') ? 'slide-image' : 'slide-image action';
-          img.src = 'images/slides/' + window.app.slides[number].photo;
+          img.src = (window.app.checkForCrapBrowser() && (typeof window.app.slides[number].crapOverride !== 'undefined')) ? 'images/slides/' + window.app.slides[number].crapOverride : 'images/slides/' + window.app.slides[number].photo;
           $('.stage-container').html(img).animate({ opacity: 1 }, 400);
           
           if (typeof window.app.slides[number].popup !== 'undefined') {
