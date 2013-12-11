@@ -162,7 +162,7 @@ $(function() {
         maxSpeed: 3,
         flakeCount: 20
       };
-      if ($(window).width() >= 480) { $('.container').snowfall(params); };
+      if ($(window).width() >= 480) { $('.wrapper').snowfall(params); };
     }
     
     app.prototype.hoverlay = function(x, y, width, height, angle) {
