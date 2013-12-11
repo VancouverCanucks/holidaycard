@@ -14,10 +14,11 @@
       "modifier": "modal-video"
     },
     {
-      "photo": "1.png",
+      "photo": "1a.png",
       "title": "Slide 3: Luongo",
       "link": "",
-      "code": ""
+      "code": "",
+      "bubble": "<p>What's your favourite Christmas food?</p><p>Traditional Italian Fried Fish</p>"
     },
     {
       "photo": "2.png",
@@ -27,10 +28,11 @@
       "modifier": "modal-letter"
     },
     {
-      "photo": "3.png",
+      "photo": "3a.png",
       "title": "Slide 5: Kesler",
       "link": "",
-      "code": ""
+      "code": "",
+      "bubble": "<p>What's your favourite Christmas memory growing up?</p><p>Just being with the family</p>"
     },
     {
       "photo": "4.png",
@@ -41,9 +43,10 @@
       "modifier": "modal-gal"
     },
     {
-      "photo": "5.png",
+      "photo": "5a.png",
       "title": "Slide 7: Bieksa",
-      "code": ""
+      "code": "",
+      "bubble": "<p>What are your thoughts on the Christmas sweaters?</p><p>They're beautiful...they did a good job at picking this one out!</p>"
     },
     {
       "photo": "share.png",

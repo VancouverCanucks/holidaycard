@@ -299,6 +299,24 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.wordbubble {
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-box-shadow: 0 2px 5px 1px #383838;
+  box-shadow: 0 2px 5px 1px #383838;
+}
+
+.wordbubble p {
+  padding-bottom: 10px;
+}
+
+.wordbubble p:last-child {
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @media (max-width: 1190px) {
   
   .letter-container {
@@ -401,6 +419,25 @@ input[type="text"] {
     border: white 3px solid;
   }
   
+}
+
+@media (min-width: 800px) {
+  .wordbubble {
+    top: 20px;
+    right: 50px;
+    font-size: 20px;
+    max-width: 20%;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wordbubble {
+    bottom: 20px;
+    max-width: 80%;
+    font-size: 12px;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 480px) {

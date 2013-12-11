@@ -41,6 +41,7 @@ $(function() {
           img.className = (typeof window.app.slides[number].popup === 'undefined') ? 'slide-image' : 'slide-image action';
           img.src = 'images/slides/' + window.app.slides[number].photo;
           $('.stage-container').html(img).animate({ opacity: 1 }, 400);
+          
           if (typeof window.app.slides[number].popup !== 'undefined') {
             $('.stage-container').on('click', '.slide-image', function() {
               window.app.modal(window.app.slides[number].popup, window.app.slides[number].modifier);
@@ -49,6 +50,10 @@ $(function() {
                 window.app[window.app.slides[number].doSomething]();
               }
             });
+          }
+          
+          if (typeof window.app.slides[number].bubble !== 'undefined') {
+            $('.stage-container').append('<div class="wordbubble">' + window.app.slides[number].bubble + '</div>');
           }
         });
       }
