@@ -168,6 +168,14 @@ header img {
   background: #399dc6;
 }
 
+.button.card {
+  background: #ff040a;
+}
+
+.button.card:hover {
+  background: #a3171a;
+}
+
 .button.facebook:hover {
   background: #3962c2;
 }
