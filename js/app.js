@@ -53,7 +53,7 @@ $(function() {
           }
           
           if (typeof window.app.slides[number].bubble !== 'undefined') {
-            $('.stage-container').append('<div class="wordbubble">' + window.app.slides[number].bubble + '</div>');
+            $('.stage-container').append('<div class="wordbubble"><div class="words">' + window.app.slides[number].bubble + '</div><div class="bubble1"></div><div class="bubble2"></div></div>');
           }
         });
       }
