@@ -294,7 +294,8 @@ input[type="text"] {
   display: block;
   text-align: center;
   font-size: 40px;
-  color: black;  
+  color: black;
+  margin-bottom: -46px;
 }
 
 .modal .video {
